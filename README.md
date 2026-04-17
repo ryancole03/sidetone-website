@@ -11,6 +11,15 @@ Landing page for [Sidetone](https://github.com/ryancole03/sidetone) - Real-time 
 ## Tech Stack
 
 - Pure HTML/CSS (no build required)
-- Inter font from Google Fonts
 - GitHub Pages for hosting
 - GitHub Actions for CI/CD
+
+## Licenses
+
+### Fonts
+
+- **Inter** by Rasmus Andersson ([GitHub](https://github.com/rsms/inter)) - Licensed under [SIL Open Font License 1.1](https://scripts.sil.org/OFL)
+
+### Software
+
+This website is open source under the [MIT License](LICENSE).
