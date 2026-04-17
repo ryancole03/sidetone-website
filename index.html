@@ -95,11 +95,27 @@
         }
 
         main {
-            max-width: 640px;
+            max-width: 960px;
             margin: 0 auto;
             padding: 80px 24px 120px;
             text-align: center;
             flex: 1;
+        }
+
+        .showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            margin-bottom: 64px;
+            text-align: left;
+        }
+
+        .showcase .screenshot {
+            margin-bottom: 0;
+        }
+
+        .showcase .features {
+            margin-bottom: 0;
         }
 
         h1 {
@@ -229,7 +245,7 @@
             color: var(--text);
         }
 
-        @media (max-width: 640px) {
+        @media (max-width: 768px) {
             nav {
                 padding: 20px 24px;
             }
@@ -248,6 +264,10 @@
 
             .actions {
                 flex-direction: column;
+            }
+
+            .showcase {
+                grid-template-columns: 1fr;
             }
 
             .controls {
@@ -275,9 +295,24 @@
             </a>
         </div>
 
-        <img src="assets/screenshot.png" alt="Sidetone application" class="screenshot">
+        <div class="showcase">
+            <img src="assets/screenshot.png" alt="Sidetone application" class="screenshot">
 
-        <div class="features">
+            <div class="features">
+                <div class="feature">
+                    <h3>Low-latency WASAPI</h3>
+                    <p>Direct audio capture and playback using Windows' native audio APIs for minimal delay.</p>
+                </div>
+                <div class="feature">
+                    <h3>Noise Suppression</h3>
+                    <p>Powered by SpeexDSP, reduces background noise while keeping your voice clear.</p>
+                </div>
+                <div class="feature">
+                    <h3>Full Control</h3>
+                    <p>Adjust playback volume, noise suppression strength, and microphone gain in real-time.</p>
+                </div>
+            </div>
+        </div>
             <div class="feature">
                 <h3>Low-latency WASAPI</h3>
                 <p>Direct audio capture and playback using Windows' native audio APIs for minimal delay.</p>
